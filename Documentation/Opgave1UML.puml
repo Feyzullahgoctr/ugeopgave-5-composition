@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Lamp {
+    - int watt
+    - boolean isOn
+    + void turnOn()
+    + void turnOff()
+}
+
+class Window{
+    - int widthCm
+    - int HeightCm
+    - int lampCount
+    - int windowCount
+    - int totalWatt
+    - int totalWindowArea
+    + int getAreaCm2()
+}
+class Room{
+    - String name
+    - ArrayList<Lamp> lamps
+    - ArrayList<Window> windows
+    + void addLamp(Lamp lamp)
+    + void addWindow(Window window)
+    + int getLampCount()
+    + int getTotalWatt()
+    + int getTotalWindowArea()
+    + void printRoom()
+}
+
+class Building{
+    - String name
+    - ArrayList<Room> rooms
+    + void addRoom(Room room)
+    + int getTotalLampCount()
+    + int getTotalWatt()
+    + void printBuilding()
+}
+
+Building *-- Room
+Room *-- Lamp
+Room *-- Window
+
+@enduml
