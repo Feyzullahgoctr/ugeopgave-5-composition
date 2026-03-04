@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+abstract class Animal {
+    - String name
+    - int energy
+    + boolean isActive()
+    + int attack(Animal)
+}
+
+class Lion {
+    + int attack(Animal)
+}
+class Wolf {
+    + int attack(Animal)
+}
+class Rabbit {
+    + int attack(Animal)
+}
+
+class Contest{
+    - int tours
+    - Animal animal1
+    - Animal animal2
+    + void playRound()
+    + Animal getWinner()
+}
+
+Contest *-- Animal
+Animal <|-- Lion
+Animal <|-- Wolf
+Animal <|-- Rabbit
+
+@enduml
