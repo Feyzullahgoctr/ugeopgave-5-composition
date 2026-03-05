@@ -1,5 +1,7 @@
 package Opgave2;
 
+// Animal-objekt skal ikke oprettes i Main Metodu
+// Subklasser har forskellig adfærd
 public abstract class Animal {
 
     private String name;

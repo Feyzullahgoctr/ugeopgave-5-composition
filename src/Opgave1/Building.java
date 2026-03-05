@@ -24,6 +24,11 @@ public class Building {
         rooms.add(room);
     }
 
+    // Vi bruger denne metod i building class
+    // Fordi Building har ArrayList<Room> og detaljer
+    // Det er meget nemt at gøre det her.
+    // Det er nemmere at læse og vedligeholde.
+    // Vi forsøger at skrive forkortet i main method
     public int getTotalLampCount() {
         int totalLampCount = 0;
         for (Room room : rooms) {
