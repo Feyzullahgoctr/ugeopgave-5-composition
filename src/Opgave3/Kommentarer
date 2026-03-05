@@ -1,0 +1,24 @@
+
+
+ Komposition (has-a):
+  - Der er Character og Item Class
+  - Hver character har flere Item
+  - Vi bruger Arraylist<Item> i en character
+  - på den måde kan hver eneste character bruge sine Items til attack og defence.
+  - Character has-a Item
+
+ Nedarving (is-a):
+  - Item Class indeholder våben og rustning
+  - Jeg har lavet en Item class med felterne våben og rustning.
+  - men jeg kunne lave en item class og bagefter kunne bruge nedarving
+  - Men man kunne også bruge nedarving:
+  - kunne Lave en abstract Item klasse, og lave derefter subklasser: Våben og Rustning.
+  - På den måde: Våben is-a Item, Rustning is-a Item.
+
+  - Jeg har ikke lavet det på den måde, fordi jeg ikke vidste, hvordan jeg skulle gøre det.
+  - måske kan jeg skifte mine kode på den måde
+
+
+
+
+
